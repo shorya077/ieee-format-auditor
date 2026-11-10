@@ -1,0 +1,6 @@
+streamlit>=1.38,<2.0
+PyMuPDF>=1.24,<2.0
+lxml>=5.0,<7.0
+PyYAML>=6.0,<7.0
+pandas>=2.2,<4.0
+pytest>=8.0,<10.0

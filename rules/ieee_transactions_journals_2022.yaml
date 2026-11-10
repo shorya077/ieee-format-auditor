@@ -1,0 +1,157 @@
+profile:
+  id: ieee_transactions_journals_2022
+  name: IEEE Transactions, Journals and Letters — 2022 Authoring Template
+  document_type: journal
+  source: reference/IEEE_Transactions_Journals_Letters_2022.docx
+  source_note: >-
+    Extracted from the user's uploaded 2022 IEEE Transactions, Journals and Letters
+    Word template. The source explicitly says it is an authoring template, not a final
+    production template; IEEE may reformat accepted articles. Use it for author-side
+    manuscript preparation and do not treat differences in final published PDFs as
+    automatic submission violations.
+  authoring_template_not_final_production: true
+
+page:
+  paper_size: US Letter
+  width_pt: 612
+  height_pt: 792
+  margins_pt:
+    top: 50.4
+    right: 46.8
+    bottom: 50.4
+    left: 46.8
+  margin_tolerance_pt: 3
+  body_columns: 2
+  mixed_front_matter_columns_allowed: true
+
+content:
+  title:
+    required: true
+    style_ids: [Title]
+    title_case_not_all_uppercase: true
+    invited_marker_prohibited: true
+    avoid_long_subscript_formulas: true
+    short_identifying_formulas_allowed: true
+    full_author_names_preferred: true
+    initials_must_have_spaces: true
+    orcid_allowed: true
+    variables_lightface_italic: true
+    numbers_and_units_bold: true
+  abstract:
+    required: true
+    single_paragraph: true
+    prohibited_content: [displayed_mathematical_equations, numbered_reference_citations, footnotes]
+    stand_alone: true
+    grammar_review: true
+  keywords:
+    required: true
+    label: Index Terms
+    min_count: 3
+    max_count: 4
+    alphabetical_order: true
+    comma_separated: true
+  authors:
+    minimum: 1
+    full_names_preferred: true
+    initials_spacing: true
+    orcid_allowed: true
+    affiliations_include_current_address_and_email: true
+  headings:
+    top_level_pattern: roman_numeral
+    heading_case: title_case
+    section_heading_styles: [Heading1, Heading2, Heading3, Heading4]
+  figures:
+    caption_position: below
+    in_text_label: Fig.
+    axis_labels: words_preferred_over_symbols
+    axis_label_size_pt: [8, 10]
+    subfigure_labels: [a, b, c]
+    subfigure_label_font: Times New Roman
+    subfigure_label_size_pt: 8
+    placement: at_end_or_near_first_mention_at_top_of_page
+    one_column_width_in: 3.5
+    page_width_in: 7.16
+    maximum_depth_in: 8.5
+    accepted_formats: [EPS, PS, TIFF, PDF, JPEG, PNG]
+    color_grayscale_min_dpi: 300
+    line_art_and_tables_min_dpi: 600
+    vector_fonts_embedded_or_outlined: true
+  tables:
+    title_position: above
+    numbering: roman_numerals
+    footnote_marker: letters
+    resolution_min_dpi: 600
+  equations:
+    consecutive_numbering: true
+    number_format: parentheses
+    number_alignment: flush_right
+    variables_italic: true
+    define_symbols_before_or_immediately_after: true
+  algorithms:
+    numbering_required: true
+    short_title_required: true
+    horizontal_rules_above_below_title_and_after_last_line: true
+  references:
+    citation_style: numeric_square_brackets
+    numbering: consecutive
+    references_need_not_be_cited: true
+    one_entry_per_number: true
+    author_names: initials_before_surname
+    et_al_only_if_more_than_six_or_names_unavailable: true
+    abbreviated_conference_titles: true
+    title_capitalization: first_word_only_except_proper_nouns_and_element_symbols
+    footnotes_in_reference_list_prohibited: true
+  acronyms:
+    define_on_first_use_even_if_defined_in_abstract: true
+    exceptions: [IEEE, SI, ac, dc]
+  footnotes:
+    numbering: superscript
+    placement: bottom_of_cited_column
+    endnotes_prohibited: true
+    table_footnotes_use_letters: true
+  acknowledgments:
+    heading_singular: true
+    funding_support_location: unnumbered_first_page_footnote_preferred
+  biographies:
+    optional: true
+    author_photo_guidance: true
+    check_publication_allows_biographies: true
+  pagination:
+    page_numbers_allowed_in_template_header: true
+    manuscript_id_header_placeholder_must_be_replaced: true
+  template_cleanup:
+    remove_instructional_and_sample_text: true
+
+style_reference:
+  paragraph_styles:
+    title: Title
+    abstract: Abstract
+    authors: Authors
+    index_terms: IndexTerms
+    heading_1: Heading1
+    heading_2: Heading2
+    heading_3: Heading3
+    heading_4: Heading4
+    figure_caption: FigureCaption
+    table_title: TableTitle
+    references: References
+    equation: Equation
+  known_style_point_sizes:
+    title: 24
+    abstract: 9
+    index_terms: 9
+    figure_caption: 8
+    table_title: 8
+    references: 8
+  note: >-
+    Template styles inherit some font and paragraph properties. The supplied authoring
+    template contains one-column front matter followed by two-column body sections.
+    Final journal proofs can differ from the author's template rendering.
+
+template_markers:
+  - '> REPLACE THIS LINE WITH YOUR MANUSCRIPT ID NUMBER'
+  - 'Preparation of Articles for IEEE TRANSACTIONS and JOURNALS (2022)'
+  - 'This document provides a guide for preparing articles for IEEE Transactions'
+  - 'First A. Author, Fellow, IEEE'
+  - 'Second B. Author'
+  - 'Third C. Author Jr.'

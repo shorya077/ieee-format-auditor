@@ -1,0 +1,103 @@
+profile:
+  id: ieee_conference_letter_template
+  name: IEEE Conference Paper — Uploaded Letter Template
+  document_type: conference
+  source: reference/IEEE_conference_template_letter.docx
+  source_note: >-
+    Rules below are extracted from the user's uploaded three-page IEEE conference
+    template. They are a template-specific starting profile, not a guarantee that
+    every IEEE conference uses identical requirements. Always check the target
+    conference's current author instructions.
+
+page:
+  paper_size: US Letter
+  width_pt: 612
+  height_pt: 792
+  # Values extracted from the uploaded Word template's section properties.
+  margins_pt:
+    top: 54
+    right: 44.65
+    bottom: 72
+    left: 44.65
+  margin_tolerance_pt: 3
+  body_columns: 2
+
+content:
+  title:
+    required: true
+    subtitle_allowed: false
+    prohibited_content: [symbols, special_characters, footnotes, mathematics]
+  abstract:
+    required: true
+    prohibited_content: [symbols, special_characters, footnotes, mathematics]
+  keywords:
+    required: true
+  authors:
+    minimum: 1
+    template_capacity: 6
+    more_than_six_instruction: Add author names horizontally; use a third row if needed for more than eight authors.
+    sequence: left_to_right_then_next_row
+  headings:
+    top_level_pattern: roman_numeral
+    second_level_pattern: capital_letter
+    permitted_word_styles: [Heading 1, Heading 2, Heading 3, Heading 4]
+    component_heading_style: Heading 5
+    do_not_add_subheadings_when_fewer_than_two_subtopics: true
+  figures:
+    caption_position: below
+    in_text_label: "Fig."
+    axis_labels: words_preferred_over_symbols_or_abbreviations
+  tables:
+    title_position: above
+    footnote_marker: letters
+  equations:
+    consecutive_numbering: true
+    number_alignment: flush_right
+    variable_symbols_italic: true
+    greek_symbols_not_italicized: true
+    minus_sign: long_dash
+    define_symbols_before_or_immediately_after: true
+  references:
+    citation_style: numeric_square_brackets
+    numbering: consecutive
+    do_not_prefix_reference_unless_sentence_starts: true
+    author_names: all_names_unless_six_or_more
+    title_capitalization: first_word_only_except_proper_nouns_and_element_symbols
+    unpublished_label: unpublished
+    accepted_label: in press
+  acronyms:
+    define_on_first_use: true
+    exceptions: [IEEE, SI, MKS, CGS, sc, dc, rms]
+  units:
+    primary_system: SI_or_CGS
+    avoid_mixing_SI_and_CGS: true
+    leading_zero: true
+    examples: ["0.25", "cm3", "henries"]
+  pagination:
+    page_numbers: prohibited
+  template_cleanup:
+    remove_all_template_instruction_text: true
+
+style_reference:
+  # Style names and points are captured from the supplied DOCX style definitions.
+  paragraph_styles:
+    paper_title: papertitle
+    abstract: Abstract
+    keywords: Keywords
+    heading_1: Heading1
+    heading_2: Heading2
+    heading_3: Heading3
+    heading_4: Heading4
+    component_heading: Heading5
+    figure_caption: figurecaption
+    table_heading: tablehead
+    references: references
+  known_style_point_sizes:
+    paper_title: 24
+    figure_caption: 8
+    references: 8
+    table_heading: 8
+  note: >-
+    Word styles may inherit properties from base styles and theme fonts. The auditor
+    reports directly detectable run/style properties and sends inherited or rendered
+    layout questions to manual review.
